@@ -56,7 +56,7 @@
      console.log(` сумма = ${c}`);
      return c;
  }
- function rasnost (a, b) {
+ function raznost (a, b) {
     let c = a + b;
     console.log(` разность = ${c}`);
     return c;
@@ -71,3 +71,28 @@ function delenie (a, b) {
     console.log(` деление = ${c}`);
     return c;
 }
+ // задание 5
+   
+ function mathOperation(arg1, arg2, operation) {
+    switch (operation) {
+    case 'summa':
+        return summa(arg1, arg2)
+        break;
+    case 'raznost':
+        return raznost(arg1, arg2)
+        break;
+    case 'proizvedenie':
+        return proizvedenie(arg1, arg2) 
+        break;
+    case 'delenie':
+        return delenie(arg1, arg2)
+        break;
+    default:
+        return NaN
+        break;
+    }
+}
+let a = 5
+let b = 2
+let result = mathOperation(a, b, 'raznost')
+console.log('a + b = ', result)
